@@ -7,26 +7,52 @@
 </head>
 <body>
     <div class="form-container">
+        <!-- Título del formulario -->
         <h1>Formulario de Contacto</h1>
+
+        <!-- Inicio del formulario -->
         <form action="/submit-form" method="POST">
+
+            <!-- Campo de texto para el nombre completo -->
+            <!-- <label> es un elemento que define una etiqueta para un <input> u otro elemento de formulario -->
+            <!-- El atributo 'for' en <label> debe coincidir con el atributo 'id' del <input> correspondiente -->
             <label for="nombre">Nombre Completo:</label>
+            
+            <!-- El atributo 'type="text"' especifica que este es un campo de entrada de texto -->
+            <!-- El atributo 'id' proporciona un identificador único para el campo -->
+            <!-- El atributo 'name' especifica el nombre del campo, utilizado al enviar el formulario -->
+            <!-- El atributo 'required' indica que este campo es obligatorio -->
             <input type="text" id="nombre" name="nombre" required>
 
+            <!-- Campo de correo electrónico -->
             <label for="email">Correo Electrónico:</label>
+            <!-- El atributo 'type="email"' asegura que el valor introducido tenga un formato de correo electrónico válido -->
             <input type="email" id="email" name="email" required>
 
+            <!-- Campo de número de teléfono -->
             <label for="telefono">Número de Teléfono:</label>
+            <!-- El atributo 'type="tel"' permite la entrada de números de teléfono -->
             <input type="tel" id="telefono" name="telefono" required>
 
+            <!-- Campo de texto para la ciudad -->
             <label for="ciudad">Ciudad:</label>
+            <!-- Otro campo de texto simple -->
             <input type="text" id="ciudad" name="ciudad" required>
 
+            <!-- Campo de texto para el país -->
             <label for="pais">País:</label>
+            <!-- Otro campo de texto simple -->
             <input type="text" id="pais" name="pais" required>
 
+            <!-- Área de texto para el mensaje -->
             <label for="mensaje">Mensaje:</label>
+            <!-- El elemento 'textarea' permite la entrada de múltiples líneas de texto -->
+            <!-- A diferencia de 'input', 'textarea' no usa el atributo 'type' -->
             <textarea id="mensaje" name="mensaje"></textarea>
 
+            <!-- Botón de envío -->
+            <!-- El atributo 'type="submit"' convierte este botón en uno que envía el formulario -->
+            <!-- El texto dentro del botón ("Enviar") es lo que se muestra en la interfaz -->
             <button type="submit">Enviar</button>
         </form>
     </div>
