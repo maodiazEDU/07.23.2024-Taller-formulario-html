@@ -1,3 +1,74 @@
-.{
-    
+/* Estilo básico para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin padding */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff; /* Color de fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 300px; /* Ancho fijo */
+
+    /* box-shadow: agrega una sombra a los elementos */
+    /* El primer valor '0' es el desplazamiento horizontal de la sombra */
+    /* El segundo valor '0' es el desplazamiento vertical de la sombra */
+    /* El tercer valor '10px' es el radio de desenfoque de la sombra */
+    /* rgba(0, 0, 0, 0.1) especifica el color de la sombra en formato rgba (rojo, verde, azul, alfa) */
+    /* Aquí, '0, 0, 0' representa el color negro y '0.1' es la opacidad de la sombra */
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center; /* Alinear al centro */
+    color: #333333; /* Color de texto */
+}
+
+/* Estilo del formulario */
+form {
+    display: flex; /* Flexbox para disposición */
+    flex-direction: column; /* Disposición en columna */
+}
+
+/* Estilo de las etiquetas */
+label {
+    margin-bottom: 5px; /* Espacio inferior */
+    color: #333333; /* Color de texto */
+}
+
+/* Estilo de los campos de entrada y área de texto */
+input, textarea {
+    margin-bottom: 15px; /* Espacio inferior */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #dddddd; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+/* Permitir redimensionar verticalmente el área de texto */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Color de texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+/* Cambio de color del botón al pasar el ratón */
+button:hover {
+    background-color: #0056b3;
 }
